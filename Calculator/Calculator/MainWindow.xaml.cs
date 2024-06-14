@@ -17,7 +17,7 @@ namespace Calculator
             try
             {
 
-                //ResultOutput.Text = EvaluateExpression(inputExpression).ToString();
+                //ResultOutput.Text = Solving(inputExpression).ToString();
             }
             catch (Exception ex)
             {
