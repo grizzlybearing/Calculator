@@ -39,7 +39,7 @@ namespace WpfApp2.ViewModel
 
         private void AddFunction()
         {
-            if (!string.IsNullOrWhiteSpace(NewFunction))
+            if (!string.IsNullOrWhiteSpace(NewFunction) && FunctionValidator.ValidateFunction(NewFunction))
             {
                 Functions.Add(new UserFunction { Function = NewFunction});
                 NewFunction = string.Empty;
