@@ -16,7 +16,7 @@ namespace WpfApp2.Validators
         public static bool ValidateValue(string value)
         {
             if (value == "") return false;
-            string patternNumeric = @"^-?\d+(.\d+)*$";
+            string patternNumeric = @"^-?\d+(,\d+)*$";
             Regex regexAlpha = new Regex(patternNumeric);
             return regexAlpha.IsMatch(value);
         }
