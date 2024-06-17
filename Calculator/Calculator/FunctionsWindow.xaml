@@ -7,7 +7,7 @@ mc:Ignorable="d"
 Title="Function List" Height="350" Width="525">
     <Grid>
         <StackPanel>
-            <TextBox x:Name="NewTodoTitle" Width="300" Margin="10" Text="{Binding NewFunction, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="NewFunction" Width="300" Margin="10" Text="{Binding NewFunction, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Content="Add Function" Command="{Binding AddFunctionCommand}" Width="100" Margin="10"/>
             <ListBox ItemsSource="{Binding Functions}" Width="300" Height="200" Margin="10">
                 <ListBox.ItemTemplate>
